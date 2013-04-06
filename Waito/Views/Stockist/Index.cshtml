@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Waito.WaitoDistributor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="content">
+
+		<div id="subheader">
+			<div id="subheader-title">
+			<img alt="Stockists" src="~/Images/stockists-subheader.png">
+			</div>
+
+			<div id="subheader-subtitle">
+			
+			</div>
+		</div>
+
+		<div id="page-top">
+			<!--Top rounded corners-->
+		</div>
+
+	<div id="page-wrapper">
+
+		<div id="page-template">
+			
+
+<p>Waitoa Free Range Chicken Products are available from a wide variety of stockists throughout New Zealand. To view a full list of our outlets displayed by region, please download the <a href="#">Waitoa Free Range Stockist list</a>.</p>
+
+<p>In addition, the Waitoa Free Range Chicken range can be found in the following food specialty stores:</p>
+
+<br>
+
+    @foreach (var item in Model)
+    {   
+        <p><strong>@item.Title</strong><br>
+        @item.Description <br>
+        @item.Address<br>        
+        Phone: @item.Phone</p>
+        if (Request.IsAuthenticated)
+        {
+            <br>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = item.DistributorId })
+                @Html.ActionLink("Delete", "Delete", new { id = item.DistributorId })
+            </p>
+        }
+        <br><br>
+    }
+
+
+	<div id="page-image">
+			<img alt="Waitoa Community" src="~/Images/waitoa-faqs-images.jpg">
+	</div>
+
+		</div>
+	</div>
+		
+		<div id="page-bottom">
+			<!--Bottom shadow -->
+		</div>
+
+	</div><!--content-->

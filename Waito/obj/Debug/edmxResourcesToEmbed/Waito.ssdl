@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaitoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WaitoModelStoreContainer">
+    <EntitySet Name="WaitoDistributor" EntityType="WaitoModel.Store.WaitoDistributor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WaitoPage" EntityType="WaitoModel.Store.WaitoPage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WaitoProducts" EntityType="WaitoModel.Store.WaitoProducts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WaitoRecipes" EntityType="WaitoModel.Store.WaitoRecipes" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="WaitoDistributor">
+    <Key>
+      <PropertyRef Name="DistributorId" />
+    </Key>
+    <Property Name="DistributorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WaitoPage">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PageName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PageContent" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="WaitoProducts">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ConsumerDetails" Type="nvarchar(max)" />
+    <Property Name="Cooking" Type="nvarchar(max)" />
+    <Property Name="IngredientList" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MediumImage" Type="nvarchar" MaxLength="200" />
+    <Property Name="LargeImage" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WaitoRecipes">
+    <Key>
+      <PropertyRef Name="RecipeID" />
+    </Key>
+    <Property Name="RecipeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ingredients" Type="nvarchar(max)" />
+    <Property Name="Serves" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LargeImage" Type="nvarchar(max)" />
+    <Property Name="MediumImage" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

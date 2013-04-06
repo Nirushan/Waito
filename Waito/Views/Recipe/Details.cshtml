@@ -1,0 +1,58 @@
+﻿@model Waito.Models.Recipe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div id="content">
+
+    <div id="subheader">
+		<div id="subheader-title">
+		<img alt="Recipes" src="~/Images/recipes-subheader.png">
+		</div>
+
+		<div id="subheader-subtitle">
+		<img title="Delicious Recipes for the Whole Family" alt="Delicious Recipes for the Whole Family" src="~/Images/delicious-recipes-for-the-whole-family.png">
+		</div>
+    </div>
+
+    <div id="recipes-subpage-wrapper">
+
+		<div class="page-recipe-product-subpages">
+
+
+			<div id="recipes-subpage-gallery">
+
+				<h2>@Model.Title</h2> <h3>@Model.Serves</h3>
+
+			<div id="recipes-subpage-image">
+
+			</div>
+
+			<div id="recipes-gallery-buttons">
+				<a href="javascript:history.go(-1)"><img alt="Back to Recipe" style="float:left;" src="~/Images/back-to-recipe-listing-button.png"></a>
+				<img alt="Print" style="float: right;" src="~/Images/print-button.png">
+			</div>
+
+			<div id="recipes-gallery-thumbs">
+				<img alt="More Great Recipes" src="~/Images/more-great-recipes.png">
+			</div>
+				
+				
+		</div>
+
+			<div id="recipes-subpage-text">
+				<h3>Ingredients</h3>
+					@Html.Raw(Model.Ingredient)		
+
+					
+<br>
+				<h3>Cooking Instructions</h3>						
+                @Html.Raw(Model.Description)
+
+			</div>
+		</div>
+	</div>
+
+
+	</div>

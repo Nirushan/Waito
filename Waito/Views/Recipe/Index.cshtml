@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Waito.Models.Recipe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="content">
+
+		<div id="subheader">
+			<div id="subheader-title">
+			<img alt="Recipes" src="~/Images/recipes-subheader.png">
+			</div>
+
+			<div id="subheader-subtitle">
+			<img title="Delicious Recipes for the Whole Family" alt="Delicious Recipes for the Whole Family" src="~/Images/delicious-recipes-for-the-whole-family.png">
+			</div>
+		</div>
+
+    <div id="recipes-wrapper">
+        @foreach (var item in Model) {
+		    <div class="page">
+
+			    <div class="recipes-block">
+				    <h2>@item.Title</h2>
+				    <a href="@Url.Content("/Recipe/Details/" + item.RecipeId)">
+				    <img alt="@item.Title" src="@Url.Content("~/Images/Recipes/" + item.MediumImage)"></a>
+                    @if (Request.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Edit", "Edit", new { id = item.RecipeId })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.RecipeId })
+                    }
+				     @item.Serves <a href="@Url.Content("/Recipe/Details/" + item.RecipeId)"><img alt="More" class="read-more-align-recipes" src="~/Images/more-button.png">  @*~/Images/serves-more-box.png*@
+				    </a>
+			    </div>
+
+            </div>
+        }
+            <div class="recipes-pagination">
+                <a href="@Url.Content("/Recipe/Index?firstId=" + Model.First().RecipeId)">
+	            <img style="float: left;" src="~/Images/back-button.png"></a>
+                <a href="@Url.Content("/Recipe/Index?lastId=" + Model.Last().RecipeId)">
+	            <img style="float: right;" src="~/Images/more-recipes-button.png"></a>
+            </div>
+	</div>
+
+
+
+	</div><!--content-->

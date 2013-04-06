@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Waito.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="content">
+
+	<div id="subheader">
+		<div id="subheader-title">
+		<img alt="Products" src="~/Images/products-subheader.png">
+		</div>
+
+		<div id="subheader-subtitle">
+		<img alt="A Great Range of Free Range Products" title="A Great Range of Free Range Products"style="margin: 16px 0 0 70px;" src="~/Images/a-great-range-of-free-range-products.png">
+		</div>
+	</div>
+    <div id="products-wrapper">
+        <div class="page">
+            @foreach (var item in Model) {
+			    <div class="products-block">
+				    <h2>@item.Title</h2>
+
+				    <a href="@Url.Content("/Product/Details/" + item.ProductId)"><img alt="@item.Title" class="products-block-image" src="@Url.Content("~/Images/Products/" + item.MediumImage)"></a>
+					    <div class="products-block-text">
+						    <p>@item.ConsumerDetail</p>
+					    </div>
+			
+					    <div class="products-block-more">
+                            @if (Request.IsAuthenticated)
+                            {
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ProductId })
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ProductId })
+                            }
+						    <a href="@Url.Content("/Product/Details/" + item.ProductId)"><img alt="More" src="~/Images/more-button.png"></a>
+					    </div>
+			    </div>
+            }
+        </div>
+     </div>
+    <div class="products-pagination">
+        <a href="@Url.Content("/Product/Index?firstId=" + Model.First().ProductId)">
+	<img style="float: left;" src="~/Images/back-button.png"></a>
+        <a href="@Url.Content("/Product/Index?lastId=" + Model.Last().ProductId)">
+	<img style="float: right;" src="~/Images/more-products-button.png"></a>
+</div>
+</div>

@@ -1,0 +1,676 @@
+body {
+	margin: 0;
+	background: url(images/background-waitoa.jpg) top center no-repeat;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	font-size: 14px;
+	margin: 0 0 8px 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+h1, h2, h3, {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: white;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 34px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+
+
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header {
+	width: 960px;
+	height: 230px;
+	margin: 0 auto;
+	float: left;
+}
+
+#header-title {
+	float: right;
+}
+
+#header-title img {
+	float: right;
+	padding: 65px 15px 0 0;
+	position: relative;
+	left: 0px;
+}
+
+#header img {
+	float: left;
+	display: inline;
+	position: relative;
+	right: 55px;
+	top: 15px;
+}
+
+#menu {
+	width: 960px;
+	height: 45px;
+	background: url(images/top-menu-bg.png);
+	color: white;
+	float: left;
+}
+
+#menu a {
+	padding: 0 30px;
+}
+
+#menu ul li {
+	display: inline;
+	list-style-type: none;
+	float: left;
+	background: url(images/menu-pipe2.png) no-repeat;
+	margin: 5px 0 0 0;
+	padding: 6px 0;
+}
+
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Menu Search Bar Styling */
+
+#menu-search {
+	float: right;
+	padding: 5px 15px 0 0;
+	width: 190px;
+	display: inline;
+}
+
+#search {
+	display: inline;
+}
+
+#search p {
+	font-size: 15px;
+	margin: 13px 0 0 90px;
+	padding: 0;
+	display: inline;
+	float: left;
+}
+
+#searchwrapper {
+width:191px; /*follow your image's size*/
+height:40px;/*follow your image's size*/
+background-image:url(images/search-bar.png);
+background-repeat:no-repeat; /*important*/
+padding:0px;
+margin:0px;
+position:relative; /*important*/
+}
+ 
+#searchwrapper form { display:inline ; }
+ 
+.searchbox {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top:4px;
+left:17px;
+width:134px;
+height:22px;
+outline: none;
+
+}
+ 
+.searchbox_submit {
+border: 0; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top:5px;
+left:153px;
+width:30px;
+height:24px;
+}
+
+
+
+/* Homepage  */
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+	float: left;
+}
+
+
+#homepage-blocks {
+	width: 990px;
+	height: 245px;
+	background: url(images/homepage-blocks-bg3.png);
+	float: left;
+	position: relative;
+	right: 15px;
+}
+
+#homepage-box-container {
+	width: 900px;
+	margin: 0 auto;
+	background: #fffffe;
+	padding: 15px 0 0 0;
+}
+
+.homepage-box {
+	width: 280px;
+	height: 170px;
+	background: url(images/homepage-box-bg.png);
+	margin: 0 30px 0 0;
+	float: left;
+}
+
+	.homepage-box-image {
+		width: 110px;
+		height: 170px;
+		float: left;
+	}
+
+	.homepage-box-text {
+		width: 156px;
+		height: 170px;
+		color: white;
+		font-size: 14px;
+		float: left;
+		padding: 0 0 0 14px;
+	}
+
+
+		.homepage-box-text h2 {
+		padding: 26px 0 0 0;
+		*padding: 36px 0 0 0;
+		font-size: 14px;
+	}
+
+		.homepage-box-text p {
+		padding: 6px 15px 0 0;
+	}
+
+
+
+
+	.read-more-align {
+		float: right;
+	}	
+
+
+
+
+/*SUBPAGE*/
+
+#subheader {
+	width: 960px;
+	height: 130px;
+	float: left;
+	margin: 5px auto;
+	background: url(images/subpage-header-bg.jpg);
+}
+
+#subheader-title img {
+	margin: 30px 0 0 0;
+	position: relative;
+	right: 22px;
+	display: inline;
+	float: left;
+
+}
+
+#subheader-subtitle img {
+	display: inline;
+	float: left;
+}
+
+
+#page-top {
+	width: 990px;
+	height: 12px;
+	background: url(images/page-top-bg.png) no-repeat;
+	float: left;
+	position: relative;
+	right: 15px;
+}
+
+
+#page-wrapper {
+	width: 990px;
+	background: url(images/page-bg2.png);
+	float: left;
+	position: relative;
+	right: 15px;
+}
+
+#page-image img {
+	width: 962px;
+	margin: 15px 0 0 0;
+	position: relative;
+	right: 1px; top: 4px;
+}
+
+#page-bottom {
+	width: 990px;
+	height: 12px;
+	background: url(images/page-bottom-bg.png) no-repeat;
+	float: left;
+	position: relative;
+	right: 15px;
+}
+
+.page {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+#page-template {
+	padding: 10px 0 0 0; 
+	width: 960px;
+	margin: 0 auto;
+}
+
+#page-template a {
+	color: #333333;
+}
+
+#page-template p {
+	font-size: 13px;
+	color: #8d8f8c;
+	padding: 0 40px;
+}
+
+
+#page-template h4 {
+	color: green;
+	margin: 20px 0 2px 0;
+	padding: 0 40px;
+}
+
+	.back-to-home-button {
+		display: inline;
+		float: right;
+		border: none;
+		margin-right: 70px;
+	}
+
+
+/* RECIPES */
+
+#recipes-wrapper {
+	width: 990px;
+	background: url(images/recipes-bg.png) no-repeat;
+	float: left;
+	padding: 20px 0 100px 35px;
+	position: relative;
+	right: 15px;
+}
+
+.recipes-block {
+	width: 450px;
+	height: 450px;
+	float: left;
+	margin-top: 4px;
+	background: url(images/recipe-block-bg.png) no-repeat;
+	text-align: center;
+
+}
+
+.recipes-block h2 {
+	color: #084a0e;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	padding-top: 50px;
+	margin: 0 0 15px 0;
+}
+
+.recipes-block img {
+	padding: 0 0 10px 0;
+
+}
+
+.read-more-align-recipes {
+		float: right;
+		margin: 0 55px 0 0;
+	}	
+
+
+.recipes-pagination img{
+	margin: 17px 0 0 0;
+	padding: 0px 130px 0 60px;
+}
+
+
+/* RECIPES - SUBPAGE */
+
+/*WRAPPER*/
+		#recipes-subpage-wrapper {
+			width: 990px;
+			background: url(images/products-subpage-bg3.png) no-repeat bottom;
+			float: left;
+			padding: 20px 0 120px 18px;
+			margin: 12px 0 0 0;
+			position: relative;
+			right: 15px;
+		}
+
+/*INNER*/
+		.page-recipe-product-subpages {
+			width: 930px;
+			margin: 0 auto;
+			background: white;
+			float: left;
+			position: relative;
+			left: 15px;
+
+		}
+
+
+#recipes-subpage-gallery {
+	width: 425px;
+	margin: 0 15px 0 30px;
+	float: left;
+}
+
+#recipes-subpage-gallery h2 {
+	font-size: 20px;
+	color: #246826;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	padding-top: 20px;
+	margin: 0 0 15px 0;
+	display: inline;
+	float: left;
+
+}
+
+#recipes-subpage-gallery h3 {
+	font-family: Arial;
+	font-weight: normal;
+	margin: 23px 0 0 0;
+	display: inline;
+	float: right;
+	color: #246826;
+	padding: 0 10px 0 0;
+}
+
+#recipes-subpage-image {
+	width: 415px;
+	height: 260px;
+	border: 1px solid black;
+	float: left;
+}
+
+#recipes-gallery-buttons {
+	width: 415px;
+	margin: 15px 0 0 0;
+	float: left;
+}
+
+#recipes-gallery-thumbs {
+	width: 415px;
+	margin: 5px 0 0 0;
+	float: left;
+}
+
+
+
+#recipes-subpage-text {
+	width: 415px;
+	padding: 0 0 0 10px;
+	margin-top: 60px;
+	float: left;
+}
+
+
+#recipes-subpage-text p{
+	font-size: 12px;
+}
+
+#recipes-subpage-text ul li{
+	font-size: 12px;
+}
+
+#recipes-subpage-text h3 {
+	color: #246826;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+}
+
+
+
+
+
+
+
+/* PRODUCTS */
+
+#products-wrapper {
+	width: 990px;
+	background: url(images/products-bg.png) no-repeat;
+	float: left;
+	padding: 20px 0 105px 18px;
+	position: relative;
+	right: 15px;
+}
+
+.products-block {
+	width: 450px;
+	height: 400px;
+	float: left;
+	margin: 4px 0 0 12px;
+	background: url(images/products-block-bg.png) no-repeat;
+
+}
+
+
+.products-block h2 {
+	color: #084a0e;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	padding-top: 30px;
+	margin: 20px 0 15px 0;
+	padding: 0 0 0 25px;
+	letter-spacing: -1px;
+}
+
+	.products-block-image {
+		padding: 0 0 10px 60px;
+		display: inline;
+
+	}
+
+.products-block-text {
+	width: 225px;
+	float: left;
+	padding: 0 10px 0 30px;
+}
+
+.products-block-text p {
+	color: #073606;
+	font-size: 13px;
+	padding: 10px 10px 0 0;
+	line-height: 15px;
+}
+
+.products-block-more {
+	float: left;
+	padding: 40px 0 0 0;
+}
+
+/* PRODUCTS - SUBPAGE */
+
+/*WRAPPER*/
+#products-subpage-wrapper {
+	width: 990px;
+	background: url(images/products-subpage-bg3.png) no-repeat bottom;
+	float: left;
+	padding: 20px 0 120px 18px;
+	margin: 12px 0 0 0;
+	position: relative;
+	right: 15px;
+}
+		
+/*INNER*/
+.page-recipe-product-subpages {
+	width: 930px;
+	margin: 0 auto;
+	background: white;
+	float: left;
+	position: relative;
+	left: 15px;
+}
+
+
+#products-subpage-gallery {
+	width: 425px;
+	margin: 0 15px 0 30px;
+	float: left;
+}
+
+#products-subpage-gallery h2 {
+	color: #89cd03;
+	font-weight: bold;
+
+}
+
+
+#products-subpage-image {
+	width: 415px;
+	height: 260px;
+	border: 1px solid black;
+	float: left;
+}
+
+#products-gallery-buttons {
+	width: 415px;
+	margin: 15px 0 0 0;
+	float: left;
+}
+
+#products-gallery-thumbs {
+	width: 415px;
+	margin: 5px 0 0 0;
+	float: left;
+}
+
+.products-pagination img{
+	margin: 17px 0 0 0;
+	padding: 0px 92px 0 50px;
+}
+
+
+
+
+
+#products-subpage-text {
+	width: 415px;
+	padding: 0 0 0 10px;
+	margin-top: 70px;
+	float: left;
+}
+
+#products-subpage-text p{
+	font-size: 13px;
+}
+#products-subpage-text h3 {
+	color: #89ce02;
+	font-weight: normal;
+	margin: 0 0 3px 0;
+}
+
+/* FOOTER */
+
+#footer-wrapper {
+	width: 100%;
+	height: 230px;
+	background: url(images/footer-bg.png);
+	margin: 50px 0 0 0;
+	float: left;
+
+}
+
+#footer {
+	width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+
+.footer-block {
+	width: 202px;
+	float: left;
+}
+
+.footer-block ul li{
+	list-style-type: none;
+	margin: 0 0 6px 0;
+	font-size: 16px;
+}
+
+.footer-block ul{
+	margin: 0;
+	padding: 0;
+}
+
+.footer-block h3 {
+	font-size: 19px;
+	color: white;
+	margin-top: 30px;
+	font-family: Verdana;
+	font-weight: normal;
+}
+
+	.footer-block img {
+		position: relative;
+		bottom: 30px;
+		padding: 0 0 0 10px;
+	}
+
+#footer-copyright {
+	width: 352px;
+	float: left;
+	text-align: right;
+	margin: 100px 0 0 0;
+}
+
+#footer-copyright p {
+	font-size: 15px;
+}

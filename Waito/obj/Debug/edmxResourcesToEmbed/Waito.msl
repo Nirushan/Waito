@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaitoModelStoreContainer" CdmEntityContainer="WaitoEntities">
+    <EntitySetMapping Name="WaitoDistributors">
+      <EntityTypeMapping TypeName="WaitoModel.WaitoDistributor">
+        <MappingFragment StoreEntitySet="WaitoDistributor">
+          <ScalarProperty Name="DistributorId" ColumnName="DistributorId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaitoPages">
+      <EntityTypeMapping TypeName="WaitoModel.WaitoPage">
+        <MappingFragment StoreEntitySet="WaitoPage">
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageContent" ColumnName="PageContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaitoProducts">
+      <EntityTypeMapping TypeName="WaitoModel.WaitoProduct">
+        <MappingFragment StoreEntitySet="WaitoProducts">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ConsumerDetails" ColumnName="ConsumerDetails" />
+          <ScalarProperty Name="Cooking" ColumnName="Cooking" />
+          <ScalarProperty Name="IngredientList" ColumnName="IngredientList" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MediumImage" ColumnName="MediumImage" />
+          <ScalarProperty Name="LargeImage" ColumnName="LargeImage" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaitoRecipes">
+      <EntityTypeMapping TypeName="WaitoModel.WaitoRecipe">
+        <MappingFragment StoreEntitySet="WaitoRecipes">
+          <ScalarProperty Name="RecipeID" ColumnName="RecipeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Ingredients" ColumnName="Ingredients" />
+          <ScalarProperty Name="Serves" ColumnName="Serves" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LargeImage" ColumnName="LargeImage" />
+          <ScalarProperty Name="MediumImage" ColumnName="MediumImage" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

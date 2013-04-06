@@ -1,0 +1,56 @@
+﻿@model Waito.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div id="content">
+
+		<div id="subheader">
+			<div id="subheader-title">
+			<img alt="Products" src="~/Images/products-subheader.png">
+			</div>
+
+			<div id="subheader-subtitle">
+			<img alt="A Great Range of Free Range Products" title="A Great Range of Free Range Products"style="margin: 16px 0 0 70px;" 
+                src="~/Images/a-great-range-of-free-range-products.png">
+			</div>
+		</div>
+
+
+	<div id="products-subpage-wrapper">
+
+		<div class="page-recipe-product-subpages">
+			<div id="products-subpage-gallery">
+				<h2>@Model.Title</h2>
+
+				<div id="products-subpage-image">
+
+			</div>
+
+			<div id="products-gallery-buttons">
+				<a href="javascript:history.go(-1)"><img alt="Back to Products" src="~/Images/back-to-product-listing-button.png"></a>
+			</div>
+
+			<div id="products-gallery-thumbs">
+				<img alt="More" src="~/Images/more-great-products.png">
+			</div>
+				
+			
+		</div>
+
+			<div id="products-subpage-text">
+				<h3>Product Description</h3>
+					<p>@Html.Raw(@Model.Description)</p><br>
+
+				<h3>Ingredients</h3>
+					<p>@Html.Raw(@Model.IngredientList)</p><br>					
+
+				<h3>Cooking Instructions</h3>
+				    <p>@Html.Raw(@Model.Cooking)</p>               
+                
+			</div>
+		</div>
+	</div>
+
+</div>
